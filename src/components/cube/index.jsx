@@ -12,9 +12,9 @@ export default function index() {
         <div className={styles.main}>
             <div className={styles.cube}>
                 <Canvas>
-                    <OrbitControls enableZoom={true} enablePan={false} />
+                    <OrbitControls enableZoom={true} enablePan={false} minDistance={5} maxDistance={10}/>
                     <ambientLight intensity={2} />
-                    <directionalLight position={[2, 1, 1]} />
+                    <directionalLight position={[2, 3, 1]} />
                     <CustomModel />
                 </Canvas>
             </div>
