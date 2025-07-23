@@ -12,7 +12,7 @@ export default function index() {
         <div className={styles.main}>
             <div className={styles.cube}>
                 <Canvas>
-                    <OrbitControls enableZoom={false} enablePan={false} />
+                    <OrbitControls enableZoom={true} enablePan={false} />
                     <ambientLight intensity={2} />
                     <directionalLight position={[2, 1, 1]} />
                     <CustomModel />
@@ -26,7 +26,7 @@ function CustomModel() {
     const model = useGLTF('/assets/ud.glb');
     return (
         <motion.mesh>
-            <primitive object={model.scene} scale={2.5} />
+            <primitive object={model.scene} scale={4.5} />
         </motion.mesh>
     );
 }
