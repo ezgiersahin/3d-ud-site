@@ -1,10 +1,10 @@
-.main{
-    height:auto;
+.main {
+    height: 100vh;
     background-color: black;
 
-    .cube{
-        position: sticky;
+    .cube {
+        position: relative;
         top: 0;
-        height: 200vh;
+        height: 100%;
     }
 }
