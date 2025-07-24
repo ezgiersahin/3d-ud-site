@@ -1,12 +1,48 @@
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[5].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[5].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[5].oneOf[9].use[5]!./src/components/cube/style.module.scss ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;1,400&display=swap");
 .style_main__bzn_P {
   height: 100vh;
-  background-color: black;
+  background-image: url("/assets/tasarım.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 .style_main__bzn_P .style_cube__TWma5 {
   position: relative;
-  top: 0;
   height: 100%;
+  z-index: 100;
+}
+.style_main__bzn_P .style_textOverlay__Si3Kl {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  max-width: 25%;
+  background-color: rgba(176, 167, 141, 0.5);
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  font-family: "Amiri", serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: #521d1d;
+  line-height: 1.3;
+  font-weight: 200;
+  opacity: 3;
+  animation: style_fadeIn__5n4QY 2s ease-in-out 0.5s forwards;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+@keyframes style_fadeIn__5n4QY {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
